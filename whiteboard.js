@@ -18,7 +18,7 @@ const mapGrid=document.getElementById("mapGrid");
 var gameTime=20;
 var pause=false;
 var friction=0.1;
-var blockSize=30;
+var blockSize=10;
 function drawMap(){
     let canvas=document.getElementById("mapCanvas");
     let ds=canvas.getContext("2d");
