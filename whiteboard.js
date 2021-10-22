@@ -194,7 +194,7 @@ var stateName="";
 var pic=false;
 function showPerson(){
     let photo=document.getElementById("photo");
-    photo.src="Cheng-I-Lin.github.io/unnamed-removebg-preview (1).png";
+    photo.src="Cheng-I-Lin.github.io/unnamed-removebg-preview(1).png";
     if(photo.style.display=="block"){
         photo.style.display="none";
         pic=false;
