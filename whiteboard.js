@@ -18,7 +18,7 @@ const mapGrid=document.getElementById("mapGrid");
 var gameTime=20;
 var pause=false;
 var friction=0.1;
-var blockSize=10;
+var blockSize=30;
 function drawMap(){
     let canvas=document.getElementById("mapCanvas");
     let ds=canvas.getContext("2d");
@@ -82,7 +82,7 @@ function drawMap(){
                 }
             }
             ds.fillRect(blockX,blockY,blockSize,blockSize);
-            ds.lineWidth=2;
+            ds.lineWidth=1.8;
             if(USMap[i][j].includes("l")){
                 ds.beginPath();
                 ds.moveTo(blockX+blockSize,blockY);
@@ -412,8 +412,8 @@ setInterval(function(){
     document.getElementById("speedValue").innerHTML=document.getElementById("speed").value;
     let tooltip=document.getElementById("tooltip");
     //Make tool tip on top of player
-    tooltip.style.top=(grid.offsetHeight/2)-(player.size/2)+grid.offsetTop-tooltip.offsetHeight-10+"px";
-    tooltip.style.left=(grid.offsetWidth/2)+grid.offsetLeft-(tooltip.offsetWidth/2)+"px";
+    tooltip.style.top=(grid.offsetHeight/2)-(player.size/2)+grid.offsetTop-tooltip.offsetHeight-9+"px";
+    tooltip.style.left=(window.innerWidth/2)-(tooltip.offsetWidth/2)+"px";
     let left=Math.floor((player.x+(grid.offsetWidth/2-(player.size/2)))/blockSize);
     let right=Math.floor((player.x+player.size+(grid.offsetWidth/2-(player.size/2)))/blockSize);
     let top=Math.floor((player.y+(grid.offsetHeight/2-(player.size/2)))/blockSize);

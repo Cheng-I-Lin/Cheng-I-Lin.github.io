@@ -7,7 +7,7 @@
         <link rel="icon" type="image/png" href="Downloads/USH_Map-removebg-preview.png"/>
     </head>
     <body>
-        <span style="position: absolute; left: 38%; font-size: 200%;"><strong>European Exloration to the US</strong></span>
+        <span style="position: absolute; left: 38%; font-size: 170%;"><strong>European Exloration to the US</strong></span>
         <div id="grid" style="position: absolute; width: 90%; height: 80%; top: 10%; left: 5%; border: black 1px solid; overflow: hidden;">
             <div id="ocean" style="width: 100%; height: 100%; background-color: rgb(0, 174, 255); display: none;"></div>
             <div id="mapGrid" style="position: absolute; width: 500%; height: 500%; left: 0%; top: 0%;"></div>
@@ -123,7 +123,7 @@
             <div id="slideRight" style="width: 0; height: 0; position: absolute;right: 1%;top: 30%;border-top: 60px solid transparent;border-bottom: 60px solid transparent;border-left: 60px solid rgba(0, 0, 0, 0.2); transition: border-left 0.7s;"></div>
             <div id="slideLeft" style="width: 0; height: 0; position: absolute;left: 1%;top: 30%;border-top: 60px solid transparent;border-bottom: 60px solid transparent;border-right: 60px solid rgba(0, 0, 0, 0.2);transition: border-right 0.7s;"></div>
         </div>
-        <div id="tooltip" style="position: absolute; width: 65px; height: auto; background-color: rgba(0, 0, 0, 0.8); color: white; text-align: center; border-radius: 10%; border: wheat 2px solid; display: none;">
+        <div id="tooltip" style="position: absolute; width: 5%; height: auto; background-color: rgba(0, 0, 0, 0.8); color: white; text-align: center; border-radius: 10%; border: wheat 2px solid; display: none;">
             <span id="states">Hi</span><br>
             <span id="moreInfo">None</span><br>
         </div>
@@ -136,9 +136,9 @@
             Timline: <span id="colonizedTime"></span><br>
             <input type="range" min="1" max="2" value="1" id="timeline" style="width: 70%;">
         </div>
-        <button style="position: absolute; right: 4.9%; bottom: 9.85%; width: 50px; height: 30px; background-color: rgb(241, 183, 94);" onclick="locateMap();"><strong>Locate Map</strong></button>
-        <div id="infoPage" style="position: absolute; bottom: 100%; left: 0%; width: 100%; height: 100%; background-color: beige; opacity: 0.85; text-align: center;">
-            <br><span><strong>Game Information</strong></span><br><br>
+        <button style="position: absolute; right: 4.9%; bottom: 9.85%; width: 100px; height: 30px; background-color: rgb(241, 183, 94);" onclick="locateMap();"><strong>Locate Map</strong></button>
+        <div id="infoPage" style="position: absolute; bottom: 100%; left: 0%; width: 100%; height: 100%; background-color: beige; opacity: 0.85; text-align: center; font-size: 145%;">
+            <br><span style="font-size: 135%;"><strong>Game Information</strong></span><br><br>
             <strong>Createad By</strong><br>Alan Lin<br><br>
             <strong>Game Description</strong><br>
             A game where you can learn the European colonization(Spanish, British, French, and Dutch) of the Americas.<br>
@@ -149,10 +149,10 @@
             U.S. States Labels: <button style="width: 100px; height: 22.5px; background-color: rgb(241, 183, 94);" onclick="showLabels();"><strong>Labels</strong></button>
             Show Ocean: <button style="width: 100px; height: 22.5px; background-color: rgb(241, 183, 94);" onclick="showOcean();"><strong>Ocean</strong></button><br><br>
             Map Size: <span id="sizeValue"></span><br>
-            <input type="range" min="10" max="50" value="30" id="mapSize" style="width: 35%;"><br><br>
+            <input type="range" min="1" max="50" value="25" id="mapSize" style="width: 35%;"><br><br>
             Character speed: <span id="speedValue"></span><br>
             <input type="range" min="1" max="10" value="5" id="speed" style="width: 35%;"><br><br>
-            Character Color:<br>
+            Character Color<br>
             <input type="range" min="0" max="255" value="0" class="slider" id="blockColor1">
             <input type="range" min="0" max="255" value="0" class="slider" id="blockColor2">
             <input type="range" min="0" max="255" value="0" class="slider" id="blockColor3"><br><br>
