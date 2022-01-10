@@ -1,0 +1,41 @@
+#slideContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+    background-color: blue;
+}
+#intro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: left 1s;
+    background-color: aqua;
+}
+#mapGame{
+    background-color: black;
+}
+#slideRight{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid rgb(145, 145, 145);
+    transition: border-left 0.7s;
+}
+#slideLeft{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid rgb(145, 145, 145);
+    transition: border-right 0.7s;
+}
