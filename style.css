@@ -51,7 +51,7 @@
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-left: 60px solid rgb(145, 145, 145);
+    border-left: 60px solid blanchedalmond;
     transition: border-left 0.7s;
 }
 #slideRight:hover{
@@ -65,7 +65,7 @@
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-right: 60px solid rgb(145, 145, 145);
+    border-right: 60px solid blanchedalmond;
     transition: border-right 0.7s;
 }
 #slideLeft:hover{
