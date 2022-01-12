@@ -5,7 +5,15 @@
     left: 0%;
     top: 0%;
     overflow: hidden;
-    background-color: blue;
+    text-align: center;
+    font-size: large;
+}
+.textContainer{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 15%;
+    top: 5%;
 }
 #intro{
     position: absolute;
@@ -39,7 +47,7 @@
     width: 0; 
     height: 0; 
     position: absolute;
-    right: 0%;
+    right: 5%;
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
@@ -47,13 +55,13 @@
     transition: border-left 0.7s;
 }
 #slideRight:hover{
-    background-color: rgb(241, 183, 94);
+    border-left: rgb(241, 183, 94);
 }
 #slideLeft{
     width: 0; 
     height: 0; 
     position: absolute;
-    left: 0%;
+    left: 5%;
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
@@ -61,5 +69,5 @@
     transition: border-right 0.7s;
 }
 #slideLeft:hover{
-    background-color: rgb(241, 183, 94);
+    border-right: rgb(241, 183, 94);
 }
