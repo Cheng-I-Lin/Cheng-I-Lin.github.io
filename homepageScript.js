@@ -12,6 +12,19 @@ slideLeft.addEventListener("click",function(){
 slideRight.addEventListener("click",function(){
     slideNum++;
 });
+//Changes the inventory slide color when hovering(1/12)
+document.getElementById("slideLeft").addEventListener("mouseleave", function(){
+    document.getElementById("slideLeft").style.borderRightColor="blanchedalmond";
+});
+document.getElementById("slideLeft").addEventListener("mouseover", function(){
+    document.getElementById("slideLeft").style.borderRightColor="rgb(241, 183, 94)";
+});
+document.getElementById("slideRight").addEventListener("mouseleave", function(){
+    document.getElementById("slideRight").style.borderLeftColor="blanchedalmond";
+});
+document.getElementById("slideRight").addEventListener("mouseover", function(){
+    document.getElementById("slideRight").style.borderLeftColor="rgb(241, 183, 94)";
+});
 setInterval(function(){
     if(slideNum==0){
         slideLeft.style.display="none";
