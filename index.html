@@ -1,70 +1,188 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Page of Games</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page of Projects</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="Project_Topics_-_Google_Slides_-_Google_Chrome_2022_1_10_上午_12_07_19__2_-removebg-preview (1).png"/>
     </head>
     <body>
-        <!--Can build like a slide show to present games and myself -->
-        <h1>Home Page</h1>
-        <a href="https://cheng-i-lin.github.io/US-History-Map/">ssssssssssssssssssssssssss</a>
-        <a href="https://cheng-i-lin.github.io/Air-Pollution-Quiz/">hello</a>
         <!--<a href="">Bomb</a>-->
+        <div id="introBanner">
+            <!--Decrease opacity of the image-->
+            <img id="introImg" src="Project_Topics_-_Google_Slides_-_Google_Chrome_2022_1_10_上午_12_07_19__2_-removebg-preview (1).png">
+            <div id="overlayText">
+                <br><br><br><br><br><br><h1>Home Page of Projects</h1><br>
+                By: Cheng-I Lin
+            </div>
+        </div>
+        <!--Navigation on the top of the page, placed after banner to show the border line at bottom for separation-->
+        <div id="topNavigaion">
+            <a class="navigationLinks" href="#">Home Page of Projects</a>
+            <!--Use href=# and id name to link to specific objects-->
+            <a class="navigationLinks" href="#aboutMe">About Me</a>
+            <a class="navigationLinks" href="#whyCS">Why Computer Science</a>
+            <a class="navigationLinks" href="#slideContainer">My Projects</a>
+            <a class="navigationLinks" href="#footer">Contact Information</a>
+        </div>
+        <section id="aboutMe">
+            <div id="decorationLineTop"></div>
+            <div id="decorationBorderTop"></div>
+            <div id="aboutMeText">
+                <br><br><br><h1>About Me</h1>
+                Welcome to my home page site where I keep all of the projects that I had previously created. My name is <strong>Cheng-I(Alan) Lin</strong>
+                and I am passionate about computer science and its various appliances. I attend the school of <a href="https://www.astaichung.com/"><strong>AST</strong></a>, 
+                American School in Taichung, where I attended classes on computer science and learned how to code. Moreover, I studied and practiced coding 
+                using the language of <strong>HTML, CSS, JavaScript, Java, C++, and Python</strong> by myself as well, through the help of online sessions,
+                tutoring, and looking at codes/programs created by others online in platforms such as <a href="https://github.com/"><strong>GitHub</strong></a>. 
+                As I kept practicing and coding miscellaneous programs, I gradually began to grasp a understanding of how to create useful, meaningful,
+                interactive, and enjoyable programs, which then allowed me to start programming more complex projects with a larger scale.<br><br>
+                <h1 id="whyCS">Why Computer Science?</h1>
+                As technology proliferates and advances, I think it has became extremely crucial for people to learn and understand the power
+                and increasing importance of computer science. Nowadays, people can simply stay in their homes and start typing codes to create
+                multiple different types of programs dedicated for accomplishing specific tasks. Since we can make programs anywhere with almost
+                no materials needed, except for a coding device and maybe the internet, why not start programming to change the world by resolving
+                difficult problems that we face recently. Most importantly, as you finish and publish your programs and projects online, everyone who
+                uses the internet(basically everyone in the world) can potentially see your creations, allowing you to share your ideas, opinions, and
+                teachings in a matter of seconds to the world population. This is why I am currently devoted and determined to share my
+                views and thoughts through my programming projects, hoping that others that saw my work would do the same in helping the
+                world develop and advance as a whole.
+            </div>
+            <div id="decorationLineBottom"></div>
+            <div id="decorationBorderBottom"></div>
+        </section>
         <div id="slideContainer">
             <div id="intro">
+                <div class="imgContainer">
+                    <img class="slideImg">
+                </div>
                 <!--Think of a better title than introduction-->
                 <div class="textContainer">
-                    <h1>Swipe to See Projects...</h1><br>  
+                    <h1>My Projects</h1><br>  
+                    Swipe to see the various games, designs, and projects that I have made over the past years by clicking
+                    the arrows on either side of the screen. Those projects include<br>
+                    <!--ul is used for an unordered list(like bullet points) and ol is for ordered lists(like 1,2,3)--> 
+                    <ul>
+                        <strong>
+                            <!--li tag marks each individual list-->
+                            <li>U.S. History Map Game</li>
+                            <li>QuestionnAIRe</li>
+                            <li>Many other more that are yet to come</li>
+                        </strong>
+                    </ul>
+                    Each individual project is designated to solve a particular global issue, promote education and spread
+                    knowledge, or stimulate the creativity of users through fun, enjoyable, and interactive processes.<br><br>
+                    These projects were created so that they would not only be used as gaming devices that help users to
+                    relax, but also tools for educational purposes that may enhance the users' comprehension and understanding
+                    of the world and its rich history and disastrous problems.<br><br>
+                    All of these programs were coded by myself alone, so I really hope that you would enjoy them and find them
+                    interesting and meaningful. 
                 </div>              
             </div>
             <div id="mapGame">
+                <div class="imgContainer">
+                    <img class="slideImg">
+                </div>
                 <div class="textContainer">   
                     <h1>U.S. History Map Game</h1><br>
-                    Game Inspiration:<br>
-                    During my U.S. history class back in school, 
+                    <strong>Game Inspiration:</strong><br>
+                    During my United States history class back in school, my teacher assigned us to create a project that would
+                    fully describe the details of the various European explorations to the Americas during the age of exploration.
+                    This is when I came up with a great idea to use my programming skills to turn this project into a reality. With this
+                    game, users can learn a significant amount of rich, important history without having to go through boring lectures or 
+                    apathetic speeches, but through a pleasant gaming experience.
                     <br><br>
-                    Game Outline/Instruction:<br>
-                
+                    <strong>Game Outline/Instruction:</strong><br>
+                    As a player, depicted by the black square at the center of the screen, you get to move around using the up, down, 
+                    left, and right arrows. This allows you to move across the map of the United States of America, with clear borders
+                    showing each state. By clicking the checkboxes on the top right corner of the screen, the map would change colors to
+                    indicate which European country had taken over which part of the United States. There is also a checkbox that shows
+                    the various reasons as to why those Europeans came to the Americas at the first place. By moving to different locations,
+                    you can press "M" to view more information on the specific, important colonizations and events that happened. Lastly, you 
+                    can press "I" to view the settings of the game.
                     <br><br>
+                    <strong><a class="gameLink" href="https://cheng-i-lin.github.io/US-History-Map/">Click here to play the U.S. History Map Game now...</a></strong>
                 </div>
             </div>
             <div id="airQuiz">
+                <div class="imgContainer">
+                    <img class="slideImg">
+                </div>
                 <div class="textContainer">
-                    <h1>Air Pollution Quiz</h1><br>
-                    Game Inspiration:<br>
+                    <h1>QuestionnAIRe</h1><br>
+                    <strong>Game Inspiration:</strong><br>
                     Taiwan, my home country, is suffering from the terrible air pollutions that are polluting the entire
                     Taiwanese population. This could lead to many environmental and health related issues that could
                     have significant impacts. This is why I came up with an idea to try to resolve the air quality 
-                    problem while making the learning process an enjoyable one. Through the Air Pollution Quiz game,
-                    users can gain crucial knowledge on air pollution with fun interactions. 
+                    problem while making the learning process an enjoyable one. Through QuestionnAIRe,
+                    users can gain crucial knowledge on air pollution with fun interactions by answering questions.
                     <br><br>
-                    Game Outline/Instruction:<br>
+                    <strong>Game Outline/Instruction:</strong><br>
                     Since this game is dedicated to quiz people on the issues and impacts air pollution brings, 
-                    the users would try to answer each individual questions that's in would slowly rise up, representing
-                    polluted air, 
+                    the users would try to answer each individual questions that's imbedded in a cloud of polluted air, which
+                    would slowly rise up to the top of the screen, representing the release of carbon dioxide, methane, and other
+                    green house gases to the atmosphere. To stop this, you must type in the correct responses/answers to the questions
+                    on the text box on the right of the screen. If you answer all questions correctly, you would win. However, if three
+                    polluted gases escape, then you would lose. You can also review or change/add/delete all the questions and answers 
+                    to practice and learn more information regarding air quality and air pollution. 
                     <br><br>
+                    <strong><a class="gameLink" href="https://cheng-i-lin.github.io/Air-Pollution-Quiz/">Click here to play QuestionnAIRe now...</a></strong>
                 </div>
             </div>
             <div id="bombGame">
 
             </div>
             <div id="toBeContinue">
-                <div class="textContainer">
-                    
+                <div class="imgContainer">
+                    <img class="slideImg">
                 </div>
-                <!--Shows what's coming next-->
-                <h1>Upcoming Projects</h1><br>
-
-                <br><br>
-                Current Projects in Work:<br>
-                
-                <br><br>
+                <div class="textContainer">
+                    <!--Shows what's coming next-->
+                    <h1>Upcoming Projects</h1><br>
+                    Here is the list of all of the current projects that I am working on in this very moment. The list includes
+                    a variety of different types of projects, and all of them are in different stages of development.
+                    Although some of those projects have been completed, further examination and testing on the program is still
+                    necessary and essential. However, I would do the best I can to finish testing and publish the projects I am 
+                    working on as soon as possible. Wait for them, because it's worth it...
+                    <br><br>
+                    <strong>Current Projects in Work:</strong><br>
+                    <ul>
+                        <li>Where's the Bomb?</li>
+                        <li>Multitasking</li>
+                        <li>Driving Force</li>
+                        <li>Dynamic Information Network</li>
+                        <li>U.S. Constitution App</li>
+                        <li>Keyboard Madness</li>
+                        <li>Space Survivor</li>
+                        <li>Climate Rage</li>
+                    </ul>
+                    <strong>*The order depicts the approximate order of release of each project</strong>
+                </div>
             </div>
+            <div id="leftBorder"></div>
             <div id="slideLeft"></div>
+            <div id="rightBorder"></div>
             <div id="slideRight"></div>
+            <div class="slideCircle" id="slide1"></div>
+            <div class="slideCircle" id="slide2"></div>
+            <div class="slideCircle" id="slide3"></div>
+            <div class="slideCircle" id="slide4"></div>
         </div>
-        <section></section>
+        <footer id="footer">
+            <br><br><h1>Contact Information</h1>
+            Personal Email: alan.lin.1118@gmail.com<br>
+            School Email: 23alanl@ast.tc.edu.tw<br><br><br>
+            <!--Use i tag to insert icons, href=# just return to the top of the page of the site-->
+            <!--Can make like a home button that leads to the home page site-->
+            <a class="footerIcon" href="#"><i class="fa fa-home"></i></a>
+            <a class="footerIcon" href="https://github.com/Cheng-I-Lin"><i class="fa fa-github"></i></a>
+            <a class="footerIcon" href="https://www.facebook.com/alan.lin.3538/"><i class="fa fa-facebook-official"></i></a>
+            <a class="footerIcon" href="https://www.gmail.com"><i class="fa fa-google"></i></a>
+            <a class="footerIcon" href="https://www.instagram.com/batman_aka_alanawesome/"><i class="fa fa-instagram"></i></a>
+        </footer>
+        <!--<h1 id="hi" style="position: absolute; top: 200%; background-color: beige;">hiiiiiiii</h1>-->
         <script src="homepageScript.js"></script>
     </body>
 </html>

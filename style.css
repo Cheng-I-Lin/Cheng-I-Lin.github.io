@@ -1,47 +1,210 @@
-#slideContainer{
+/*
+Gradient background...
+background-image: linear-gradient(180deg, red, yellow);
+
+Use this to change a tag colors if want, active means when pressing the link
+*/
+#topNavigaion {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: white 2px solid;
+}
+.navigationLinks:link {
+    /*says where the text should be aligned*/
+    float: left;
+    /*controls the box size of the element*/
+    padding: 16px 16px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.navigationLinks:visited {
+    float: left;
+    padding: 16px 16px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.navigationLinks:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+/* Add a color to the active/current link */
+.navigationLinks:active {
+    background-color: rgb(49, 135, 233);
+    color: white;
+}
+.gameLink:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.gameLink:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.gameLink:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:link {
+    color: rgb(0, 0, 150);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(0, 0, 150);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+#introBanner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 8%;
+    background-color: black;
+}
+#introImg{
+    position: absolute;
+    left: 466px;
+    top: 154.5px;
+    opacity: 0.3;
+}
+#overlayText{
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0%;
     top: 0%;
-    overflow: hidden;
     text-align: center;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 10px rgb(49, 135, 233);
+}
+#aboutMe{
+    position: absolute;
+    width: 100%;
+    height: 125%;
+    left: 0%;
+    top: 108%;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgb(223, 219, 206);
+}
+#aboutMeText{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 0%;
+}
+#decorationLineTop{
+    position: absolute;
+    width: 80%;
+    height: 0;
+    background-color: rgb(49, 135, 233);
+    right: 0%;
+    top: 0%;
+    border-top: 60px solid transparent;
+    border-bottom: transparent;
+    border-left: 60px solid rgb(223, 219, 206);
+}
+#decorationBorderTop{
+    position: absolute;
+    width: 100%;
+    height: 2%;
+    background-color: rgb(49, 135, 233);
+    left: 0%;
+    top: 0%;
+}
+#decorationLineBottom{
+    position: absolute;
+    width: 80%;
+    height: 0;
+    background-color: rgb(49, 135, 233);
+    left: 0%;
+    bottom: 0%;
+    border-top: transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid rgb(223, 219, 206);
+}
+#decorationBorderBottom{
+    position: absolute;
+    width: 100%;
+    height: 2%;
+    background-color: rgb(49, 135, 233);
+    left: 0%;
+    bottom: 0%;
+}
+#slideContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 233%;
+    overflow: hidden;
+    text-align: left;
     font-size: large;
+    background-color: rgb(223, 219, 206);
 }
 .textContainer{
     position: absolute;
-    width: 70%;
-    height: 90%;
+    width: 40%;
+    height: 80%;
+    right: 15%;
+    top: 6.5%;
+}
+.imgContainer{
+    position: absolute;
+    width: 25%;
+    height: 80%;
     left: 15%;
-    top: 5%;
+    top: 6.5%;
+    overflow: hidden;
+}
+.slideImg{
+    position: absolute;
+    left: 0%;
+    top: 0%;
 }
 #intro{
     position: absolute;
     width: 100%;
     height: 100%;
     transition: left 1s;
-    background-color: rgb(43, 161, 43);
 }
 #mapGame{
     position: absolute;
     width: 100%;
     height: 100%;
     transition: left 1s;
-    background-color: rgb(175, 96, 96);
 }
 #airQuiz{
     position: absolute;
     width: 100%;
     height: 100%;
     transition: left 1s;
-    background-color: rgb(245, 148, 37);
 }
 #toBeContinue{
     position: absolute;
     width: 100%;
     height: 100%;
     transition: left 1s;
-    background-color: rgb(79, 38, 194);
 }
 #slideRight{
     width: 0; 
@@ -51,8 +214,20 @@
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-left: 60px solid blanchedalmond;
+    border-left: 60px solid rgb(253, 222, 175);
     transition: border-left 0.7s;
+    display: none;
+}
+#rightBorder{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    right: 4.63%;
+    top: 38.6%;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 70px solid rgb(0, 0, 0);
+    display: none;
 }
 #slideLeft{
     width: 0; 
@@ -62,6 +237,72 @@
     top: 40%;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-right: 60px solid blanchedalmond;
+    border-right: 60px solid rgb(253, 222, 175);
     transition: border-right 0.7s;
+    display: none;
+}
+#leftBorder{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    left: 4.63%;
+    top: 38.6%;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-right: 70px solid black;
+    display: none;
+}
+.slideCircle{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(253, 222, 175);
+    border: black solid 2px;
+    transition: opacity 0s;
+}
+#slide1{
+    bottom: 5%;
+    left: 45%;
+}
+#slide2{
+    bottom: 5%;
+    left: 47.5%;
+}
+#slide3{
+    bottom: 5%;
+    left: 50%;
+}
+#slide4{
+    bottom: 5%;
+    left: 52.5%;
+}
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0%;
+    top: 333%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+.footerIcon{
+    font-size: 225%;
+    /*Specifies the spacing between each letter*/
+    letter-spacing: 2px;
+}
+.footerIcon:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footerIcon:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footerIcon:hover {
+    color: gold;
+    background-color: transparent;
 }
