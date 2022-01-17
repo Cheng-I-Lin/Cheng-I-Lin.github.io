@@ -57,7 +57,7 @@ document.addEventListener("mousemove",function(mouse){
         rightBorder.style.display="none";
         showCircleR=false;
     }
-    document.getElementById("hi").innerHTML=1;
+    document.getElementById("hi").innerHTML=window.innerWidth+'      '+window.innerHeight;
 });
 /*Can't hide because mouse move and show arrows, think something else later
 function hideLArrow(){
