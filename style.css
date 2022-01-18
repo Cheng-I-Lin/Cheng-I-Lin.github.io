@@ -16,7 +16,8 @@ body {
     left: 0vw;
     top: 0vh;
     text-align: center;
-    font-size: x-large;
+    /*Relative to the font-size of the element (2em means 2 times the size of the current font)*/
+    font-size: 1.5em;
     border-bottom: white 2px solid;
 }
 .navigationLinks:link {
@@ -97,7 +98,7 @@ a:hover {
     top: 0vh;
     text-align: center;
     color: white;
-    font-size: xx-large;
+    font-size: 2em;
     text-shadow: 2px 2px 10px rgb(49, 135, 233);
 }
 #aboutMe{
@@ -107,7 +108,7 @@ a:hover {
     left: 0vw;
     top: 108vh;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5em;
     background-color: rgb(223, 219, 206);
 }
 #aboutMeText{
@@ -163,7 +164,7 @@ a:hover {
     top: 233vh;
     overflow: hidden;
     text-align: left;
-    font-size: large;
+    font-size: 1.125em;
     background-color: rgb(223, 219, 206);
 }
 .textContainer{
@@ -292,7 +293,7 @@ a:hover {
     color: white;
 }
 .footerIcon{
-    font-size: 225%;
+    font-size: 2.25em;
     /*Specifies the spacing between each letter*/
     letter-spacing: 2px;
 }
