@@ -5,7 +5,10 @@ background-image: linear-gradient(180deg, red, yellow);
 Use this to change a tag colors if want, active means when pressing the link
 */
 body {
-  overflow-x: hidden; /* Hide horizontal scrollbars */
+    overflow-x: hidden; /* Hide horizontal scrollbars */
+}
+div{
+   transform-origin: 0 0;
 }
 #topNavigaion {
     background-color: black;

@@ -1,3 +1,10 @@
+const alldiv=document.getElementsByTagName("div");
+var scaleX=window.innerWidth/1536;
+var scaleY=window.innerHeight/722;
+for(div of alldiv){
+    div.style.transform="scaleX("+scaleX+")";
+    div.style.transform="scaleY("+scaleY+")";
+}
 var time=20;
 const slideLeft=document.getElementById("slideLeft");
 const slideRight=document.getElementById("slideRight");
