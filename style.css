@@ -24,14 +24,14 @@ body {
     /*says where the text should be aligned*/
     float: left;
     /*controls the box size of the element*/
-    padding: 16px 16px;
+    padding: 16px 25px;
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
 .navigationLinks:visited {
     float: left;
-    padding: 16px 16px;
+    padding: 16px 25px;
     color: white;
     background-color: transparent;
     text-decoration: none;
