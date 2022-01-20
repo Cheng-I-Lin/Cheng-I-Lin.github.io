@@ -2,9 +2,19 @@ const alldiv=document.getElementsByTagName("div");
 var scaleX=window.innerWidth/1536;
 var scaleY=window.innerHeight/722;
 for(div of alldiv){
-    div.style.transform="scaleX("+scaleX+")";
-    div.style.transform="scaleY("+scaleY+")";
+    div.style.transform="scaleX("+1+")";
+    div.style.transform="scaleY("+1+")";
 }
+/*
+const sections=document.getElementsByClassName("allDiv");
+sections[1].style.bottom=sections[0].offsetTop+"px";
+for(let i=2;i<sections.length;i++){
+    if(i==2){
+        sections[i].style.top=sections[0].offsetHeight+sections[0].offsetTop+"px";
+    } else{
+        sections[i].style.top=sections[i-1].offsetHeight+sections[i-1].offsetTop+"px";
+    }
+}*/
 var time=20;
 const slideLeft=document.getElementById("slideLeft");
 const slideRight=document.getElementById("slideRight");
