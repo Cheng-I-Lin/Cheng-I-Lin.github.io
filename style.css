@@ -277,20 +277,25 @@ a:hover {
     transition: opacity 0s;
 }
 #slide1{
+    /*2.5% apart*/
     bottom: 5vh;
-    left: 45vw;
+    left: 43.75vw;
 }
 #slide2{
     bottom: 5vh;
-    left: 47.5vw;
+    left: 46.25vw;
 }
 #slide3{
     bottom: 5vh;
-    left: 50vw;
+    left: 48.75vw;
 }
 #slide4{
     bottom: 5vh;
-    left: 52.5vw;
+    left: 51.25vw;
+}
+#slide5{
+    bottom: 5vh;
+    left: 53.75vw;
 }
 #footer{
     position: absolute;
