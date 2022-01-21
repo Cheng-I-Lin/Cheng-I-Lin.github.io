@@ -209,6 +209,12 @@ a:hover {
     height: 100vh;
     transition: left 1s;
 }
+#bombGame{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: left 1s;
+}
 #toBeContinue{
     position: absolute;
     width: 100vw;

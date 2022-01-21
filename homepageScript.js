@@ -24,6 +24,7 @@ const rightBorder=document.getElementById("rightBorder");
 const introSlide=document.getElementById("intro");
 const mapSlide=document.getElementById("mapGame");
 const airSlide=document.getElementById("airQuiz");
+const bombSlide=document.getElementById("bombGame");
 const continueSlide=document.getElementById("toBeContinue");
 var slideNum=0;
 slideLeft.addEventListener("click",function(){
@@ -33,7 +34,7 @@ slideLeft.addEventListener("click",function(){
     //hideLArrow();
 });
 slideRight.addEventListener("click",function(){
-    if(slideNum!=3){
+    if(slideNum!=4){
         slideNum++;
     }
     //hideRArrow();
@@ -65,7 +66,7 @@ document.addEventListener("mousemove",function(mouse){
         leftBorder.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383&&slideNum!=3){
+    if(mouse.x>=1383&&slideNum!=4){
         slideRight.style.display="block";
         rightBorder.style.display="block";
         showCircleR=true;
@@ -108,27 +109,39 @@ setInterval(function(){
             introSlide.style.left="0%";
             mapSlide.style.left="100%";
             airSlide.style.left="200%";
-            continueSlide.style.left="300%";
+            bombSlide.style.left="300%";
+            continueSlide.style.left="400%";
             img[slideNum].src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp";
             break;
         case 1:
             introSlide.style.left="-100%";
             mapSlide.style.left="0%";
             airSlide.style.left="100%";
-            continueSlide.style.left="200%";
+            bombSlide.style.left="200%";
+            continueSlide.style.left="300%";
             img[slideNum].src="USH_Map-removebg-preview.png";
             break;
         case 2:
             introSlide.style.left="-200%";
             mapSlide.style.left="-100%";
             airSlide.style.left="0%";
-            continueSlide.style.left="100%";
+            bombSlide.style.left="100%";
+            continueSlide.style.left="200%";
             img[slideNum].src="airPollutionGamePic.png";
             break;
         case 3:
             introSlide.style.left="-300%";
             mapSlide.style.left="-200%";
             airSlide.style.left="-100%";
+            bombSlide.style.left="0%";
+            continueSlide.style.left="100%";
+            img[slideNum].src="bombGamePic.png";
+            break;
+        case 4:
+            introSlide.style.left="-400%";
+            mapSlide.style.left="-300%";
+            airSlide.style.left="-200%";
+            bombSlide.style.left="-100%";
             continueSlide.style.left="0%";
             img[slideNum].src="upcomingProjects.png";
             break;
