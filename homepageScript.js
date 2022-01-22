@@ -1,10 +1,10 @@
-const alldiv=document.getElementsByTagName("div");
+/*const alldiv=document.getElementsByTagName("div");
 var scaleX=window.innerWidth/1536;
 var scaleY=window.innerHeight/722;
 for(div of alldiv){
     div.style.transform="scaleX("+1+")";
     div.style.transform="scaleY("+1+")";
-}
+}*/
 /*
 const sections=document.getElementsByClassName("allDiv");
 sections[1].style.bottom=sections[0].offsetTop+"px";
@@ -75,7 +75,7 @@ document.addEventListener("mousemove",function(mouse){
         rightBorder.style.display="none";
         showCircleR=false;
     }
-    document.getElementById("hi").innerHTML=window.innerWidth+'      '+window.innerHeight;
+    //document.getElementById("hi").innerHTML=window.innerWidth+'      '+window.innerHeight;
 });
 /*Can't hide because mouse move and show arrows, think something else later
 function hideLArrow(){
