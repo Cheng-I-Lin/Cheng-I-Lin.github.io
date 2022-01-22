@@ -3,6 +3,7 @@ var scaleY=window.innerHeight/722;
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
+    document.getElementById("hi").innerHTML=t.style.fontSize;
 }/*
 window.addEventListener("resize",function(){
     for(div of alldiv){
@@ -82,7 +83,6 @@ document.addEventListener("mousemove",function(mouse){
         rightBorder.style.display="none";
         showCircleR=false;
     }
-    //document.getElementById("hi").innerHTML=window.innerWidth+'      '+window.innerHeight;
 });
 /*Can't hide because mouse move and show arrows, think something else later
 function hideLArrow(){
