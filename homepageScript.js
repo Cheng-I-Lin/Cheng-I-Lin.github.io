@@ -1,13 +1,15 @@
 var scaleX=window.innerWidth/1536*100;
-var scaleY=window.innerHeight/722;
+var scale=window.innerWidth/1536;
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
     document.getElementById("hi").innerHTML=t.style.fontSize;
 }
-document.getElementById("footer").style.fontSize=scaleX+"%";
-document.getElementById("overlayText").style.fontSize=scaleX+"%";
+document.getElementById("topNavigaion").style.fontSize=scale*1.5+"em";
+document.getElementById("overlayText").style.fontSize=scale*2+"em";
+
 document.getElementById("aboutMeText").style.fontSize=scaleX+"%";
+document.getElementById("footer").style.fontSize=scaleX+"%";
 /*window.addEventListener("resize",function(){
     for(div of alldiv){
         div.style.width=window.innerWidth;
@@ -68,7 +70,7 @@ var showCircleR=false;
 document.addEventListener("mousemove",function(mouse){
     //Show slide arrows only when mouse is approaching them(width of arrow is 60, left=77 and 1399, 76 and 1383 with scrollbar)
     //change left to 75 to make it better
-    if(mouse.x<=135&&slideNum!=0){
+    if(mouse.x<=135*scale&&slideNum!=0){
         slideLeft.style.display="block";
         leftBorder.style.display="block";
         showCircleL=true;
@@ -77,7 +79,7 @@ document.addEventListener("mousemove",function(mouse){
         leftBorder.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383&&slideNum!=4){
+    if(mouse.x>=1383*scale&&slideNum!=4){
         slideRight.style.display="block";
         rightBorder.style.display="block";
         showCircleR=true;
