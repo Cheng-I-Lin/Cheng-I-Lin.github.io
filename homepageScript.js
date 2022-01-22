@@ -4,8 +4,11 @@ const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
     document.getElementById("hi").innerHTML=t.style.fontSize;
-}/*
-window.addEventListener("resize",function(){
+}
+document.getElementById("footer").style.fontSize=scaleX+"%";
+document.getElementById("overlayText").style.fontSize=scaleX+"%";
+document.getElementById("aboutMeText").style.fontSize=scaleX+"%";
+/*window.addEventListener("resize",function(){
     for(div of alldiv){
         div.style.width=window.innerWidth;
         div.style.height=window.innerHeight;
