@@ -1,9 +1,9 @@
-var scaleX=window.innerWidth/1536*100;
-var scale=window.innerWidth/1536;
+var scaleX=(window.innerWidth/1536+window.innerHeight/722)*50;
+var scale=(window.innerWidth/1536+window.innerHeight/722);
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
-    document.getElementById("hi").innerHTML=t.style.fontSize;
+    document.getElementById("hi").innerHTML=window.innerHeight;
 }
 document.getElementById("topNavigaion").style.fontSize=scale*1.5+"em";
 document.getElementById("overlayText").style.fontSize=scale*2+"em";
