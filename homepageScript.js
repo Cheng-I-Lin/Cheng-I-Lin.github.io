@@ -1,10 +1,9 @@
 var scaleX=(window.innerHeight/722)*100;
 var scale=(window.outerHeight/824);
-var scrollBarWidth=window.innerWidth - document.documentElement.clientWidth;
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
-    document.getElementById("hi").innerHTML=scrollBarWidth;
+    //document.getElementById("hi").innerHTML=window.innerHeight;
 }
 document.getElementById("topNavigaion").style.fontSize=scale*1.5+"em";
 document.getElementById("overlayText").style.fontSize=scale*2+"em";
@@ -32,9 +31,6 @@ for(let i=2;i<sections.length;i++){
 var time=20;
 const slideLeft=document.getElementById("slideLeft");
 const slideRight=document.getElementById("slideRight");
-//Creates another arrow to be the border of slide arrows
-const leftBorder=document.getElementById("leftBorder");
-const rightBorder=document.getElementById("rightBorder");
 const introSlide=document.getElementById("intro");
 const mapSlide=document.getElementById("mapGame");
 const airSlide=document.getElementById("airQuiz");
@@ -55,48 +51,43 @@ slideRight.addEventListener("click",function(){
 });
 //Changes the inventory slide color when hovering(1/12)
 slideLeft.addEventListener("mouseleave", function(){
-    slideLeft.style.borderRightColor="rgb(253, 222, 175)";
+    slideLeft.style.borderRightColor="black";
 });
 slideLeft.addEventListener("mouseover", function(){
-    slideLeft.style.borderRightColor="rgb(241, 183, 94)";
+    slideLeft.style.borderRightColor="rgb(6, 54, 212)";
 });
 slideRight.addEventListener("mouseleave", function(){
-    slideRight.style.borderLeftColor="rgb(253, 222, 175)";
+    slideRight.style.borderLeftColor="black";
 });
 slideRight.addEventListener("mouseover", function(){
-    slideRight.style.borderLeftColor="rgb(241, 183, 94)";
+    slideRight.style.borderLeftColor="rgb(6, 54, 212)";
 });
 var showCircleL=false;
 var showCircleR=false;
 document.addEventListener("mousemove",function(mouse){
     //Show slide arrows only when mouse is approaching them(width of arrow is 60, left=77 and 1399, 76 and 1383 with scrollbar)
     //change left to 75 to make it better
-    if(mouse.x<=135*scale-scrollBarWidth&&slideNum!=0){
+    if(mouse.x<=135*scale&&slideNum!=0){
         slideLeft.style.display="block";
-        leftBorder.style.display="block";
         showCircleL=true;
     } else{
         slideLeft.style.display="none";
-        leftBorder.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383*scale&&slideNum!=4){
+    if(mouse.x>=(1383+window.innerWidth-document.documentElement.clientWidth)*scale&&slideNum!=4){
         slideRight.style.display="block";
-        rightBorder.style.display="block";
         showCircleR=true;
     } else{
         slideRight.style.display="none";
-        rightBorder.style.display="none";
         showCircleR=false;
     }
+    document.getElementById("hi").innerHTML=mouse.x;
 });
 /*Can't hide because mouse move and show arrows, think something else later
 function hideLArrow(){
-    leftBorder.style.display="none";
     slideLeft.style.display="none";
 }
 function hideRArrow(){
-    rightBorder.style.display="none";
     slideRight.style.display="none";
 }*/
 setInterval(function(){
