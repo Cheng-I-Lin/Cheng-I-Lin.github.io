@@ -1,11 +1,9 @@
-const alldiv=document.getElementsByTagName("div");
-var scaleX=window.innerWidth/1536;
+var scaleX=window.innerWidth/1536*100;
 var scaleY=window.innerHeight/722;
-window.resizeTo(screen.width-500,screen.height-500);
-/*for(div of alldiv){
-    div.style.transform="scaleX("+1+")";
-    div.style.transform="scaleY("+1+")";
-}
+const text=document.getElementsByClassName("textContainer");
+for(t of text){
+    t.style.fontSize=scaleX+"%";
+}/*
 window.addEventListener("resize",function(){
     for(div of alldiv){
         div.style.width=window.innerWidth;
