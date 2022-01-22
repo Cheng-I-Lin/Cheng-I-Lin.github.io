@@ -94,7 +94,7 @@ a:hover {
     background-color: black;
 }
 #introImg{
-    position: relative;
+    position: absolute;
     left: 466px;
     top: 154.5px;
     opacity: 0.3;
