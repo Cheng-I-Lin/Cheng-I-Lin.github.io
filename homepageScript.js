@@ -1,5 +1,5 @@
-var scaleX=(window.innerWidth/1536+window.innerHeight/722)*50;
-var scale=(window.innerWidth/1536+window.innerHeight/722);
+var scaleX=(window.innerWidth/1536)*(window.innerHeight/722)*100;
+var scale=(window.innerWidth/1536)*(window.innerHeight/722);
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
