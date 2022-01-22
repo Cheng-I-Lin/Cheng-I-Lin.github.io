@@ -1,9 +1,10 @@
 var scaleX=(window.innerHeight/722)*100;
 var scale=(window.outerHeight/824);
+var scrollBarWidth=window.innerWidth - document.documentElement.clientWidth;
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
-    document.getElementById("hi").innerHTML=window.innerHeight;
+    document.getElementById("hi").innerHTML=scrollBarWidth;
 }
 document.getElementById("topNavigaion").style.fontSize=scale*1.5+"em";
 document.getElementById("overlayText").style.fontSize=scale*2+"em";
@@ -70,7 +71,7 @@ var showCircleR=false;
 document.addEventListener("mousemove",function(mouse){
     //Show slide arrows only when mouse is approaching them(width of arrow is 60, left=77 and 1399, 76 and 1383 with scrollbar)
     //change left to 75 to make it better
-    if(mouse.x<=135*scale&&slideNum!=0){
+    if(mouse.x<=135*scale-scrollBarWidth&&slideNum!=0){
         slideLeft.style.display="block";
         leftBorder.style.display="block";
         showCircleL=true;
