@@ -74,7 +74,7 @@ document.addEventListener("mousemove",function(mouse){
         slideLeft.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=(1383+window.innerWidth-document.documentElement.clientWidth)*scale&&slideNum!=4){
+    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=4){
         slideRight.style.display="block";
         showCircleR=true;
     } else{
