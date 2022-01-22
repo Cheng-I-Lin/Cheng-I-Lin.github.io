@@ -1,5 +1,8 @@
 var scaleX=(window.innerHeight/722)*100;
 var scale=(window.outerHeight/824);
+var introImg=document.getElementById("introImg");
+introImg.style.width=introImg.offsetWidth*scale+"px";
+introImg.style.height=introImg.offsetHeight*scale+"px";
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
     t.style.fontSize=scaleX+"%";
