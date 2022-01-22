@@ -1,10 +1,19 @@
 const alldiv=document.getElementsByTagName("div");
 var scaleX=window.innerWidth/1536;
 var scaleY=window.innerHeight/722;
-for(div of alldiv){
+window.resizeTo(screen.width-500,screen.height-500);
+/*for(div of alldiv){
     div.style.transform="scaleX("+1+")";
     div.style.transform="scaleY("+1+")";
 }
+window.addEventListener("resize",function(){
+    for(div of alldiv){
+        div.style.width=window.innerWidth;
+        div.style.height=window.innerHeight;
+        div.style.left=window.pageXOffset+"px";
+        div.style.top=window.oofse+"px";
+    }
+},false);*/
 /*
 const sections=document.getElementsByClassName("allDiv");
 sections[1].style.bottom=sections[0].offsetTop+"px";
