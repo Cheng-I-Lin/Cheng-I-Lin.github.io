@@ -38,6 +38,7 @@ const introSlide=document.getElementById("intro");
 const mapSlide=document.getElementById("mapGame");
 const airSlide=document.getElementById("airQuiz");
 const bombSlide=document.getElementById("bombGame");
+const multitaskSlide=document.getElementById("multitask");
 const continueSlide=document.getElementById("toBeContinue");
 var slideNum=0;
 slideLeft.addEventListener("click",function(){
@@ -47,7 +48,7 @@ slideLeft.addEventListener("click",function(){
     //hideLArrow();
 });
 slideRight.addEventListener("click",function(){
-    if(slideNum!=4){
+    if(slideNum!=5){
         slideNum++;
     }
     //hideRArrow();
@@ -77,14 +78,14 @@ document.addEventListener("mousemove",function(mouse){
         slideLeft.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=4){
+    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=5){
         slideRight.style.display="block";
         showCircleR=true;
     } else{
         slideRight.style.display="none";
         showCircleR=false;
     }
-    document.getElementById("hi").innerHTML=mouse.x;
+    //document.getElementById("hi").innerHTML=mouse.x;
 });
 /*Can't hide because mouse move and show arrows, think something else later
 function hideLArrow(){
@@ -117,7 +118,8 @@ setInterval(function(){
             mapSlide.style.left="100%";
             airSlide.style.left="200%";
             bombSlide.style.left="300%";
-            continueSlide.style.left="400%";
+            multitaskSlide.style.left="400%";
+            continueSlide.style.left="500%";
             img[slideNum].src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp";
             break;
         case 1:
@@ -125,7 +127,8 @@ setInterval(function(){
             mapSlide.style.left="0%";
             airSlide.style.left="100%";
             bombSlide.style.left="200%";
-            continueSlide.style.left="300%";
+            multitaskSlide.style.left="300%";
+            continueSlide.style.left="400%";
             img[slideNum].src="USH_Map-removebg-preview.png";
             break;
         case 2:
@@ -133,7 +136,8 @@ setInterval(function(){
             mapSlide.style.left="-100%";
             airSlide.style.left="0%";
             bombSlide.style.left="100%";
-            continueSlide.style.left="200%";
+            multitaskSlide.style.left="200%";
+            continueSlide.style.left="300%";
             img[slideNum].src="airPollutionGamePic.png";
             break;
         case 3:
@@ -141,7 +145,8 @@ setInterval(function(){
             mapSlide.style.left="-200%";
             airSlide.style.left="-100%";
             bombSlide.style.left="0%";
-            continueSlide.style.left="100%";
+            multitaskSlide.style.left="100%";
+            continueSlide.style.left="200%";
             img[slideNum].src="bombGamePic.png";
             break;
         case 4:
@@ -149,6 +154,16 @@ setInterval(function(){
             mapSlide.style.left="-300%";
             airSlide.style.left="-200%";
             bombSlide.style.left="-100%";
+            multitaskSlide.style.left="0%";
+            continueSlide.style.left="100%";
+            img[slideNum].src="multitaskGamePic.png";
+            break;
+        case 5:
+            introSlide.style.left="-400%";
+            mapSlide.style.left="-300%";
+            airSlide.style.left="-200%";
+            bombSlide.style.left="-100%";
+            multitaskSlide.style.left="-100%";
             continueSlide.style.left="0%";
             img[slideNum].src="upcomingProjects.png";
             break;

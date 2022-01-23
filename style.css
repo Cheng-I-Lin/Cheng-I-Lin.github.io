@@ -220,6 +220,12 @@ a:hover {
     height: 100vh;
     transition: left 1s;
 }
+#multitask{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: left 1s;
+}
 #toBeContinue{
     position: absolute;
     width: 100vw;
@@ -262,23 +268,27 @@ a:hover {
 #slide1{
     /*2.5% apart*/
     bottom: 5vh;
-    left: 43.75vw;
+    left: 42.5vw;
 }
 #slide2{
     bottom: 5vh;
-    left: 46.25vw;
+    left: 45vw;
 }
 #slide3{
     bottom: 5vh;
-    left: 48.75vw;
+    left: 47.5vw;
 }
 #slide4{
     bottom: 5vh;
-    left: 51.25vw;
+    left: 50vw;
 }
 #slide5{
     bottom: 5vh;
-    left: 53.75vw;
+    left: 52.5vw;
+}
+#slide6{
+    bottom: 5vh;
+    left: 55vw;
 }
 #footer{
     position: absolute;
