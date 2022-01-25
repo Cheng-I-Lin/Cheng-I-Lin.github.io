@@ -29,6 +29,14 @@ div{
     border-bottom: white 1px solid;
     overflow: hidden;
 }
+#navPosition{
+    float: right;
+    color: white;
+    padding: 14px 35px;
+}
+#navPosition:hover{
+    color: gold;
+}
 .navigationLinks:link {
     /*says where the text should be aligned*/
     float: left;

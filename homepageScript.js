@@ -8,11 +8,25 @@ for(t of text){
     t.style.fontSize=scaleX+"%";
     //document.getElementById("hi").innerHTML=window.innerHeight;
 }
-document.getElementById("topNavigaion").style.fontSize=scale*1.5+"em";
+const nav=document.getElementById("topNavigaion");
+nav.style.fontSize=scale*1.5+"em";
 document.getElementById("overlayText").style.fontSize=scale*2+"em";
 
 document.getElementById("aboutMeText").style.fontSize=scaleX+"%";
 document.getElementById("footer").style.fontSize=scaleX+"%";
+
+//Makes it fix/absolute position
+var lock=document.getElementById("lockIcon");
+document.getElementById("navPosition").addEventListener("click",function(){
+    if(nav.style.position=="absolute"){
+        //Changes the icon based on position
+        lock.className="fa fa-unlock";
+        nav.style.position="fixed";
+    } else{
+        lock.className="fa fa-lock";
+        nav.style.position="absolute";
+    }
+});
 /*window.addEventListener("resize",function(){
     for(div of alldiv){
         div.style.width=window.innerWidth;
