@@ -5,11 +5,16 @@ introImg.style.left=introImg.offsetLeft*scale+"px";
 introImg.style.top=introImg.offsetTop*scale+"px";
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
-    t.style.fontSize=scaleX+"%";
+    t.style.fontSize=scale+"em";
     //document.getElementById("hi").innerHTML=window.innerHeight;
 }
 const nav=document.getElementById("topNavigaion");
 nav.style.fontSize=scale*1.5+"em";
+const navLink=document.getElementsByClassName("navigationLinks");
+for(l of navLink){
+    l.style.padding=(16*scale)+"px "+(25*scale)+"px";
+}
+document.getElementById("navPosition").style.padding=(14*scale)+"px "+(35*scale)+"px";
 document.getElementById("overlayText").style.fontSize=scale*2+"em";
 
 document.getElementById("aboutMeText").style.fontSize=scaleX+"%";
