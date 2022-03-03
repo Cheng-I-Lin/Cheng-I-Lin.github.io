@@ -58,6 +58,7 @@ const mapSlide=document.getElementById("mapGame");
 const airSlide=document.getElementById("airQuiz");
 const bombSlide=document.getElementById("bombGame");
 const multitaskSlide=document.getElementById("multitask");
+const progressSlide=document.getElementById("progression");
 const continueSlide=document.getElementById("toBeContinue");
 var slideNum=0;
 slideLeft.addEventListener("click",function(){
@@ -67,7 +68,7 @@ slideLeft.addEventListener("click",function(){
     //hideLArrow();
 });
 slideRight.addEventListener("click",function(){
-    if(slideNum!=5){
+    if(slideNum!=6){
         slideNum++;
     }
     //hideRArrow();
@@ -97,7 +98,7 @@ document.addEventListener("mousemove",function(mouse){
         slideLeft.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=5){
+    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=6){
         slideRight.style.display="block";
         showCircleR=true;
     } else{
@@ -138,7 +139,8 @@ setInterval(function(){
             airSlide.style.left="200%";
             bombSlide.style.left="300%";
             multitaskSlide.style.left="400%";
-            continueSlide.style.left="500%";
+            progressSlide.style.left="500%";
+            continueSlide.style.left="600%";
             img[slideNum].src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp";
             break;
         case 1:
@@ -147,7 +149,8 @@ setInterval(function(){
             airSlide.style.left="100%";
             bombSlide.style.left="200%";
             multitaskSlide.style.left="300%";
-            continueSlide.style.left="400%";
+            progressSlide.style.left="400%";
+            continueSlide.style.left="500%";
             img[slideNum].src="USH_Map-removebg-preview.png";
             break;
         case 2:
@@ -156,7 +159,8 @@ setInterval(function(){
             airSlide.style.left="0%";
             bombSlide.style.left="100%";
             multitaskSlide.style.left="200%";
-            continueSlide.style.left="300%";
+            progressSlide.style.left="300%";
+            continueSlide.style.left="400%";
             img[slideNum].src="airPollutionGamePic.png";
             break;
         case 3:
@@ -165,7 +169,8 @@ setInterval(function(){
             airSlide.style.left="-100%";
             bombSlide.style.left="0%";
             multitaskSlide.style.left="100%";
-            continueSlide.style.left="200%";
+            progressSlide.style.left="200%";
+            continueSlide.style.left="300%";
             img[slideNum].src="bombGamePic.png";
             break;
         case 4:
@@ -174,15 +179,27 @@ setInterval(function(){
             airSlide.style.left="-200%";
             bombSlide.style.left="-100%";
             multitaskSlide.style.left="0%";
-            continueSlide.style.left="100%";
+            progressSlide.style.left="100%";
+            continueSlide.style.left="200%";
             img[slideNum].src="multitaskGamePic.png";
             break;
         case 5:
-            introSlide.style.left="-400%";
-            mapSlide.style.left="-300%";
-            airSlide.style.left="-200%";
-            bombSlide.style.left="-100%";
+            introSlide.style.left="-500%";
+            mapSlide.style.left="-400%";
+            airSlide.style.left="-300%";
+            bombSlide.style.left="-200%";
             multitaskSlide.style.left="-100%";
+            progressSlide.style.left="0%";
+            continueSlide.style.left="100%";
+            img[slideNum].src="progressPic.png";
+            break;
+        case 6:
+            introSlide.style.left="-600%";
+            mapSlide.style.left="-500%";
+            airSlide.style.left="-400%";
+            bombSlide.style.left="-300%";
+            multitaskSlide.style.left="-200%";
+            progressSlide.style.left="-100%";
             continueSlide.style.left="0%";
             img[slideNum].src="upcomingProjects.png";
             break;
