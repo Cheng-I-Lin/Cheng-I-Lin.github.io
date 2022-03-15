@@ -59,6 +59,7 @@ const airSlide=document.getElementById("airQuiz");
 const bombSlide=document.getElementById("bombGame");
 const multitaskSlide=document.getElementById("multitask");
 const progressSlide=document.getElementById("progression");
+const codeSmashSlide=document.getElementById("codeSmash");
 const continueSlide=document.getElementById("toBeContinue");
 var slideNum=0;
 slideLeft.addEventListener("click",function(){
@@ -68,7 +69,7 @@ slideLeft.addEventListener("click",function(){
     //hideLArrow();
 });
 slideRight.addEventListener("click",function(){
-    if(slideNum!=6){
+    if(slideNum!=7){
         slideNum++;
     }
     //hideRArrow();
@@ -98,7 +99,7 @@ document.addEventListener("mousemove",function(mouse){
         slideLeft.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=6){
+    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=7){
         slideRight.style.display="block";
         showCircleR=true;
     } else{
@@ -140,7 +141,8 @@ setInterval(function(){
             bombSlide.style.left="300%";
             multitaskSlide.style.left="400%";
             progressSlide.style.left="500%";
-            continueSlide.style.left="600%";
+            codeSmashSlide.style.left="600%";
+            continueSlide.style.left="700%";
             img[slideNum].src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp";
             break;
         case 1:
@@ -150,7 +152,8 @@ setInterval(function(){
             bombSlide.style.left="200%";
             multitaskSlide.style.left="300%";
             progressSlide.style.left="400%";
-            continueSlide.style.left="500%";
+            codeSmashSlide.style.left="500%";
+            continueSlide.style.left="600%";
             img[slideNum].src="USH_Map-removebg-preview.png";
             break;
         case 2:
@@ -160,7 +163,8 @@ setInterval(function(){
             bombSlide.style.left="100%";
             multitaskSlide.style.left="200%";
             progressSlide.style.left="300%";
-            continueSlide.style.left="400%";
+            codeSmashSlide.style.left="400%";
+            continueSlide.style.left="500%";
             img[slideNum].src="airPollutionGamePic.png";
             break;
         case 3:
@@ -170,7 +174,8 @@ setInterval(function(){
             bombSlide.style.left="0%";
             multitaskSlide.style.left="100%";
             progressSlide.style.left="200%";
-            continueSlide.style.left="300%";
+            codeSmashSlide.style.left="300%";
+            continueSlide.style.left="400%";
             img[slideNum].src="bombGamePic.png";
             break;
         case 4:
@@ -180,7 +185,8 @@ setInterval(function(){
             bombSlide.style.left="-100%";
             multitaskSlide.style.left="0%";
             progressSlide.style.left="100%";
-            continueSlide.style.left="200%";
+            codeSmashSlide.style.left="200%";
+            continueSlide.style.left="300%";
             img[slideNum].src="multitaskGamePic.png";
             break;
         case 5:
@@ -190,7 +196,8 @@ setInterval(function(){
             bombSlide.style.left="-200%";
             multitaskSlide.style.left="-100%";
             progressSlide.style.left="0%";
-            continueSlide.style.left="100%";
+            codeSmashSlide.style.left="100%";
+            continueSlide.style.left="200%";
             img[slideNum].src="progressPic.png";
             break;
         case 6:
@@ -200,6 +207,18 @@ setInterval(function(){
             bombSlide.style.left="-300%";
             multitaskSlide.style.left="-200%";
             progressSlide.style.left="-100%";
+            codeSmashSlide.style.left="0%";
+            continueSlide.style.left="100%";
+            img[slideNum].src="codeSmasher.png";
+            break;
+        case 7:
+            introSlide.style.left="-700%";
+            mapSlide.style.left="-600%";
+            airSlide.style.left="-500%";
+            bombSlide.style.left="-400%";
+            multitaskSlide.style.left="-300%";
+            progressSlide.style.left="-200%";
+            codeSmashSlide.style.left="-100%";
             continueSlide.style.left="0%";
             img[slideNum].src="upcomingProjects.png";
             break;
