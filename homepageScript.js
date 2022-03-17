@@ -237,3 +237,4 @@ setInterval(function(){
     img[slideNum].style.left=(imgContainer.offsetWidth-img[slideNum].offsetWidth)/2+"px";
     img[slideNum].style.top=(imgContainer.offsetHeight-img[slideNum].offsetHeight)/2+"px";
 },time);
+//Maybe have a light, dark theme
