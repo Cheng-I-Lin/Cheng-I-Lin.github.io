@@ -246,6 +246,12 @@ a:hover {
     height: 100vh;
     transition: left 1s;
 }
+#km{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: left 1s;
+}
 #toBeContinue{
     position: absolute;
     width: 100vw;
@@ -288,35 +294,39 @@ a:hover {
 #slide1{
     /*2.5% apart, 1.25% change everytime*/
     bottom: 5vh;
-    left: 40vw;
+    left: 38.75vw;
 }
 #slide2{
     bottom: 5vh;
-    left: 42.5vw;
+    left: 41.25vw;
 }
 #slide3{
     bottom: 5vh;
-    left: 45vw;
+    left: 43.75vw;
 }
 #slide4{
     bottom: 5vh;
-    left: 47.5vw;
+    left: 46.25vw;
 }
 #slide5{
     bottom: 5vh;
-    left: 50vw;
+    left: 48.75vw;
 }
 #slide6{
     bottom: 5vh;
-    left: 52.5vw;
+    left: 51.25vw;
 }
 #slide7{
     bottom: 5vh;
-    left: 55vw;
+    left: 53.75vw;
 }
 #slide8{
     bottom: 5vh;
-    left: 57.5vw;
+    left: 56.25vw;
+}
+#slide9{
+    bottom: 5vh;
+    left: 58.75vw;
 }
 #footer{
     position: absolute;
