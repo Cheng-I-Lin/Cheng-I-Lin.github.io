@@ -61,6 +61,8 @@ const multitaskSlide=document.getElementById("multitask");
 const progressSlide=document.getElementById("progression");
 const codeSmashSlide=document.getElementById("codeSmash");
 const kmSlide=document.getElementById("km");
+const researchSlide=document.getElementById("research");
+const outworldSlide=document.getElementById("outworld");
 const continueSlide=document.getElementById("toBeContinue");
 var slideNum=0;
 slideLeft.addEventListener("click",function(){
@@ -70,7 +72,7 @@ slideLeft.addEventListener("click",function(){
     //hideLArrow();
 });
 slideRight.addEventListener("click",function(){
-    if(slideNum!=8){
+    if(slideNum!=10){
         slideNum++;
     }
     //hideRArrow();
@@ -100,7 +102,7 @@ document.addEventListener("mousemove",function(mouse){
         slideLeft.style.display="none";
         showCircleL=false;
     }
-    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=8){
+    if(mouse.x>=1383*scale+window.innerWidth-document.documentElement.clientWidth&&slideNum!=10){
         slideRight.style.display="block";
         showCircleR=true;
     } else{
@@ -144,7 +146,9 @@ setInterval(function(){
             progressSlide.style.left="500%";
             codeSmashSlide.style.left="600%";
             kmSlide.style.left="700%";
-            continueSlide.style.left="800%";
+            researchSlide.style.left="800%";
+            outworldSlide.style.left="900%";
+            continueSlide.style.left="1000%";
             img[slideNum].src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp";
             break;
         case 1:
@@ -156,7 +160,9 @@ setInterval(function(){
             progressSlide.style.left="400%";
             codeSmashSlide.style.left="500%";
             kmSlide.style.left="600%";
-            continueSlide.style.left="700%";
+            researchSlide.style.left="700%";
+            outworldSlide.style.left="800%";
+            continueSlide.style.left="900%";
             img[slideNum].src="USH_Map-removebg-preview.png";
             break;
         case 2:
@@ -168,7 +174,9 @@ setInterval(function(){
             progressSlide.style.left="300%";
             codeSmashSlide.style.left="400%";
             kmSlide.style.left="500%";
-            continueSlide.style.left="600%";
+            researchSlide.style.left="600%";
+            outworldSlide.style.left="700%";
+            continueSlide.style.left="800%";
             img[slideNum].src="airPollutionGamePic.png";
             break;
         case 3:
@@ -180,7 +188,9 @@ setInterval(function(){
             progressSlide.style.left="200%";
             codeSmashSlide.style.left="300%";
             kmSlide.style.left="400%";
-            continueSlide.style.left="500%";
+            researchSlide.style.left="500%";
+            outworldSlide.style.left="600%";
+            continueSlide.style.left="700%";
             img[slideNum].src="bombGamePic.png";
             break;
         case 4:
@@ -192,7 +202,9 @@ setInterval(function(){
             progressSlide.style.left="100%";
             codeSmashSlide.style.left="200%";
             kmSlide.style.left="300%";
-            continueSlide.style.left="400%";
+            researchSlide.style.left="400%";
+            outworldSlide.style.left="500%";
+            continueSlide.style.left="600%";
             img[slideNum].src="multitaskGamePic.png";
             break;
         case 5:
@@ -204,7 +216,9 @@ setInterval(function(){
             progressSlide.style.left="0%";
             codeSmashSlide.style.left="100%";
             kmSlide.style.left="200%";
-            continueSlide.style.left="300%";
+            researchSlide.style.left="300%";
+            outworldSlide.style.left="400%";
+            continueSlide.style.left="500%";
             img[slideNum].src="progressPic.png";
             break;
         case 6:
@@ -216,7 +230,9 @@ setInterval(function(){
             progressSlide.style.left="-100%";
             codeSmashSlide.style.left="0%";
             kmSlide.style.left="100%";
-            continueSlide.style.left="200%";
+            researchSlide.style.left="200%";
+            outworldSlide.style.left="300%";
+            continueSlide.style.left="400%";
             img[slideNum].src="codeSmasher.png";
             break;
         case 7:
@@ -228,7 +244,9 @@ setInterval(function(){
             progressSlide.style.left="-200%";
             codeSmashSlide.style.left="-100%";
             kmSlide.style.left="0%";
-            continueSlide.style.left="100%";
+            researchSlide.style.left="100%";
+            outworldSlide.style.left="200%";
+            continueSlide.style.left="300%";
             img[slideNum].src="KM_Icon.png";
             break;
         case 8:
@@ -240,6 +258,36 @@ setInterval(function(){
             progressSlide.style.left="-300%";
             codeSmashSlide.style.left="-200%";
             kmSlide.style.left="-100%";
+            researchSlide.style.left="0%";
+            outworldSlide.style.left="100%";
+            continueSlide.style.left="200%";
+            img[slideNum].src="upcomingProjects.png";
+            break;
+        case 9:
+            introSlide.style.left="-900%";
+            mapSlide.style.left="-800%";
+            airSlide.style.left="-700%";
+            bombSlide.style.left="-600%";
+            multitaskSlide.style.left="-500%";
+            progressSlide.style.left="-400%";
+            codeSmashSlide.style.left="-300%";
+            kmSlide.style.left="-200%";
+            researchSlide.style.left="-100%";
+            outworldSlide.style.left="0%";
+            continueSlide.style.left="100%";
+            img[slideNum].src="upcomingProjects.png";
+            break;
+        case 10:
+            introSlide.style.left="-1000%";
+            mapSlide.style.left="-900%";
+            airSlide.style.left="-800%";
+            bombSlide.style.left="-700%";
+            multitaskSlide.style.left="-600%";
+            progressSlide.style.left="-500%";
+            codeSmashSlide.style.left="-400%";
+            kmSlide.style.left="-300%";
+            researchSlide.style.left="-200%";
+            outworldSlide.style.left="-100%";
             continueSlide.style.left="0%";
             img[slideNum].src="upcomingProjects.png";
             break;

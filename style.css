@@ -252,6 +252,18 @@ a:hover {
     height: 100vh;
     transition: left 1s;
 }
+#research{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: left 1s;
+}
+#outworld{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: left 1s;
+}
 #toBeContinue{
     position: absolute;
     width: 100vw;
@@ -294,39 +306,47 @@ a:hover {
 #slide1{
     /*2.5% apart, 1.25% change everytime*/
     bottom: 5vh;
-    left: 38.75vw;
+    left: 36.25vw;
 }
 #slide2{
     bottom: 5vh;
-    left: 41.25vw;
+    left: 38.75vw;
 }
 #slide3{
     bottom: 5vh;
-    left: 43.75vw;
+    left: 41.25vw;
 }
 #slide4{
     bottom: 5vh;
-    left: 46.25vw;
+    left: 43.75vw;
 }
 #slide5{
     bottom: 5vh;
-    left: 48.75vw;
+    left: 46.25vw;
 }
 #slide6{
     bottom: 5vh;
-    left: 51.25vw;
+    left: 48.75vw;
 }
 #slide7{
     bottom: 5vh;
-    left: 53.75vw;
+    left: 51.25vw;
 }
 #slide8{
     bottom: 5vh;
-    left: 56.25vw;
+    left: 53.75vw;
 }
 #slide9{
     bottom: 5vh;
+    left: 56.25vw;
+}
+#slide10{
+    bottom: 5vh;
     left: 58.75vw;
+}
+#slide11{
+    bottom: 5vh;
+    left: 61.5vw;
 }
 #footer{
     position: absolute;
