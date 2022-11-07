@@ -261,7 +261,7 @@ setInterval(function(){
             researchSlide.style.left="0%";
             outworldSlide.style.left="100%";
             continueSlide.style.left="200%";
-            img[slideNum].src="upcomingProjects.png";
+            img[slideNum].src="network.png";
             break;
         case 9:
             introSlide.style.left="-900%";
@@ -275,7 +275,7 @@ setInterval(function(){
             researchSlide.style.left="-100%";
             outworldSlide.style.left="0%";
             continueSlide.style.left="100%";
-            img[slideNum].src="upcomingProjects.png";
+            img[slideNum].src="unity character.png";
             break;
         case 10:
             introSlide.style.left="-1000%";
